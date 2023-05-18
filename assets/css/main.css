@@ -1,0 +1,342 @@
+/* fix rounded borders on image, fix spacing on banner between location, view the development and the image "rectangle" */
+/* @TODO fix spacing (extra 10px above view the development button) and above location */
+/* @TODO mess with responsiveness of text attachment on banner image and add hover affects*/
+/* @TODO Add animations to arrows */
+/* @TODO reposition the "view properties" side anchor */
+
+/* Common */
+html {
+  scroll-behavior: smooth;
+}
+body {
+  font-family: "Poppins", sans-serif;
+  margin: 0;
+  font-size: 0.9375rem;
+  line-height: 200%;
+  letter-spacing: 0.1px;
+  font-weight: 300;
+}
+h1 a,
+h2 a,
+h3 a,
+h4 a,
+h5 a {
+  color: inherit;
+  text-decoration: none;
+}
+h1 {
+  font-size: 2.5rem;
+  line-height: 150%;
+  margin: 0;
+}
+h2 {
+  font-size: 1.875em;
+  line-height: 150%;
+  margin: 0;
+}
+
+h3 {
+  font-size: 1.625em;
+  line-height: 140%;
+  margin: 0;
+  font-weight: 300;
+}
+
+h4 {
+  font-size: 1.375rem;
+  line-height: 150%;
+  margin: 0;
+}
+
+h5 {
+  font-size: 1.125rem;
+  line-height: 150%;
+  margin: 0;
+}
+a {
+  text-decoration: none;
+  color: inherit;
+}
+ul {
+  list-style: none;
+}
+.button {
+  /* display: flex; */
+  /* justify-content: center;
+  align-items: center;
+  gap: 10px; */
+  cursor: pointer;
+  padding: 10px 25px;
+  border-radius: 50px;
+  white-space: nowrap;
+  transition: 0.3s;
+}
+.button i {
+  margin-left: 10px;
+}
+
+/* Header */
+.header {
+  position: fixed;
+  top: 0;
+  width: 100%;
+  left: 0px;
+  z-index: 10000;
+}
+.header-button:hover {
+  background-color: #1a3c34;
+}
+.logo {
+}
+.nav-menu {
+  width: 80%;
+  margin: auto;
+  height: 105px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0px;
+  gap: 40px;
+}
+.nav-menu > ul {
+  display: flex;
+  gap: 40px;
+  text-align: center;
+  align-items: center;
+  padding: 0;
+  margin: 0;
+}
+/* Banner */
+.banner {
+  width: 100%;
+  padding: 12em 0em 23em 0em;
+  position: relative;
+}
+.container {
+  width: 80%;
+  margin: auto;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 50px;
+}
+.banner-col-1 {
+  width: 50%;
+}
+.banner-col-2 {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  gap: 25px;
+  width: 25%;
+  padding: 0 4em 0 4em;
+  border-left-width: 1px;
+  border-left-style: solid;
+  border-color: white;
+}
+@media only screen and (max-width: 992px) {
+  .banner-col-1,
+  .banner-col-2 {
+    width: 100%;
+    border: none;
+    text-align: center;
+  }
+}
+.banner-button {
+  border-width: 1px;
+  border-style: solid;
+  border-color: #c1ac7b;
+}
+.banner-button:hover {
+  background-color: #c1ac7b;
+  color: black;
+}
+.view-properties-container {
+  position: absolute;
+  left: 0%;
+  bottom: 0%;
+}
+.view-properties {
+  display: inline-block;
+  position: relative;
+}
+.view-properties a {
+  cursor: pointer;
+  position: absolute;
+  white-space: nowrap;
+  transform: rotate(-90deg) translateX(100%);
+  transform-origin: 40% 100%;
+}
+.rounded-arrow {
+  padding: 5px;
+  border-radius: 50%;
+  border-style: solid;
+  border-width: 1px;
+  border-color: #ff5d36;
+  transition: 0.3s;
+}
+.view-properties a:hover .rounded-arrow {
+  background-color: #ff5d36;
+  color: white;
+}
+/* Banner Image */
+.banner-image-container {
+  position: relative;
+  width: 80%;
+  margin: auto;
+  margin-top: -300px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+.banner-image {
+  width: 100%;
+  object-fit: contain;
+  object-position: center;
+  height: 600px;
+  background: url(../../images/test.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 10px;
+}
+.banner-image-text {
+  position: absolute;
+  top: 94%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 10px;
+  padding: 10px 48px;
+}
+
+/* Properties */
+.properties {
+  display: flex;
+  width: 80%;
+  margin: auto;
+  margin-top: 8rem;
+  flex-wrap: wrap;
+  gap: 30px;
+}
+.properties-col-1 {
+  width: 48%;
+}
+.properties-col-2 {
+  width: 48%;
+}
+.property-image-container {
+  position: relative;
+  margin-top: 8rem;
+}
+.property-image {
+  width: 100%;
+  object-fit: contain;
+  object-position: center;
+  height: 580px;
+  background: url(../../images/Mask\ group.jpg);
+  background-repeat: no-repeat;
+  background-size: cover;
+  border-radius: 10px;
+}
+.property-details {
+  position: absolute;
+  display: flex;
+  flex-direction: column;
+  width: 75%;
+  gap: 12px;
+  top: 84%;
+  padding: 30px;
+  border-top-right-radius: 10px;
+}
+.property-details div {
+  display: flex;
+}
+.property-details a {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+.property-details i {
+  font-size: 10px;
+}
+.property-details a:hover .rounded-arrow {
+  background-color: #ff5d36;
+  color: white;
+}
+.divider-vertical {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  border-left-width: 1px;
+  border-left-style: solid;
+  border-color: #c1ac7b;
+}
+.property-name-price {
+  justify-content: space-between;
+  align-items: center;
+}
+.property-plot-type {
+  gap: 30px;
+}
+/* Colors */
+
+.bg-forestGreen {
+  background: #1a3c34;
+}
+.text-forestGreen {
+  color: #1a3c34;
+}
+.bg-gold {
+  background: #c1ac7b;
+}
+.text-gold {
+  color: #c1ac7b;
+}
+
+.bg-deepGold {
+  background: #8b7a19;
+}
+.text-deepGold {
+  color: #8b7a19;
+}
+.bg-orange {
+  background: #ff5d36;
+}
+.text-orange {
+  color: #ff5d36;
+}
+.bg-peach {
+  background: #f3bf9f;
+}
+.text-peach {
+  color: #f3bf9f;
+}
+.bg-softGreen {
+  background: #445c5d;
+}
+.text-softGreen {
+  color: #445c5d;
+}
+.text-white {
+  color: white;
+}
+.bg-white {
+  background: white;
+}
+
+/* font-weights */
+.font-light {
+  font-weight: 300;
+}
+.font-medium {
+  font-weight: 500;
+}
+.font-semiBold {
+  font-weight: 600;
+}
+
+/* Margins */
+.mr-10 {
+  margin-right: 10px;
+}

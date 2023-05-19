@@ -5,10 +5,8 @@
   <head>
     <title>Reech</title>
     <meta charset="utf-8" />
-    <meta
-      name="viewport"
-      content="width=device-width, initial-scale=1, user-scalable=no"
-    />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <link rel="icon" type="image/x-icon" href="./images/logo.svg" />
     <link rel="stylesheet" href="assets/css/main.css" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -48,16 +46,6 @@
           </nav>
         </div>
       </header>
-      <!-- <li>
-<a href="#" class="icon solid fa-angle-down">About Stinders</a>
-<ul>
-  <li><a href="#">Why buy with Stinders Homes</a></li>
-  <li><a href="#">ABC+ warranty</a></li>
-  <li><a href="#">Stamp duty</a></li>
-  <li><a href="#">Mortgage calculator</a></li>
-  <li><a href="#">Help to buy</a></li>
-</ul>
-</li> -->
 
       <!-- Banner -->
       <section class="banner bg-forestGreen">
@@ -67,7 +55,7 @@
               <strong>An exclusive development </strong><br />
               of luxury bungalows & homes
             </h1>
-            <span class="font-light text-white"
+            <span class="banner-location font-light text-white"
               ><i class="fa-solid fa-location-dot text-deepGold mr-10"></i
               >Location name goes here</span
             >
@@ -81,8 +69,8 @@
               <i class="fa-solid fa-bed icon mr-10 text-gold"></i>3-5 Bedrooms
               Homes
             </h3>
-            <div>
-              <a href="#" class="button banner-button font-medium text-white"
+            <div class="banner-button-container">
+              <a href="#" class="banner-button button font-medium text-white"
                 >View The Development<i
                   class="fa-solid fa-circle-arrow-right"
                 ></i
@@ -92,12 +80,14 @@
         </div>
         <div class="view-properties-container">
           <div class="view-properties">
-            <a href="#properties" class="text-white font-light"
-              ><i
-                class="fa-solid fa-arrow-left text-orange mr-10 rounded-arrow"
-              ></i
-              >VIEW PROPERTIES</a
-            >
+            <div class="view-properties-rotate">
+              <i
+                class="fa-solid fa-arrow-left text-orange border-orange mr-10 rounded-arrow"
+              ></i>
+              <a href="#properties" class="text-white font-light"
+                >VIEW PROPERTIES</a
+              >
+            </div>
           </div>
         </div>
       </section>
@@ -105,18 +95,21 @@
       <!-- Banner Image -->
       <div class="banner-image-container">
         <div class="banner-image"></div>
-        <!-- <img src="./images/test.jpg" alt="" /> -->
         <div class="banner-image-text bg-gold">
-          <h4 class="font-medium">Sold exclusively by Name here</h4>
-          <div class="dot"></div>
+          <h5 class="font-medium">Sold exclusively by Name here</h5>
+          <div class="dot bg-black"></div>
           <a class="button"
-            >Register Your Interest<i class="fa-solid fa-circle-arrow-right"></i
+            >Register Your Interest
+            <i
+              class="fa-solid fa-arrow-right text-black border-black mr-10 rounded-arrow"
+            ></i
           ></a>
         </div>
       </div>
 
       <!-- Properties -->
-      <section id="properties" class="properties">
+      <div id="properties"></div>
+      <section class="properties">
         <div class="properties-col-1">
           <h2>Featured Properties</h2>
           <p class="font-light">
@@ -126,7 +119,9 @@
           </p>
           <!-- second property -->
           <div class="property-image-container">
-            <div class="property-image"></div>
+            <div class="property-image">
+              <img class="overlay-image" src="./images/couch.png" alt="" />
+            </div>
             <div class="property-details bg-white">
               <div class="property-name-price">
                 <h3 class="text-orange font-medium">Property Name</h3>
@@ -138,15 +133,19 @@
               </div>
               <a href="#" class="font-medium"
                 >View Property
-                <i class="fa-solid fa-arrow-right text-orange rounded-arrow"></i
+                <i
+                  class="fa-solid fa-arrow-right text-orange border-orange rounded-arrow"
+                ></i
               ></a>
             </div>
           </div>
         </div>
         <div class="properties-col-2">
-          <!-- @TODO Reusable component with dynamic values -->
+          <!-- @TODO Reusable component with dynamic name/price/type/link variables -->
           <div class="property-image-container">
-            <div class="property-image"></div>
+            <div class="property-image">
+              <img class="overlay-image" src="./images/bed.png" alt="" />
+            </div>
             <div class="property-details bg-white">
               <div class="property-name-price">
                 <h3 class="text-orange font-medium">Property Name</h3>
@@ -158,7 +157,9 @@
               </div>
               <a href="#" class="font-medium"
                 >View Property
-                <i class="fa-solid fa-arrow-right text-orange rounded-arrow"></i
+                <i
+                  class="fa-solid fa-arrow-right text-orange border-orange rounded-arrow"
+                ></i
               ></a>
             </div>
           </div>
@@ -168,10 +169,5 @@
       <footer></footer>
     </div>
     <!-- Scripts -->
-    <script src="assets/js/jquery.min.js"></script>
-    <script src="assets/js/jquery.dropotron.min.js"></script>
-    <script src="assets/js/jquery.scrollex.min.js"></script>
-    <script src="assets/js/browser.min.js"></script>
-    <script src="assets/js/breakpoints.min.js"></script>
   </body>
 </html>

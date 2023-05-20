@@ -1,5 +1,5 @@
-<!-- @TODO create dynamic name variables with javascript -->
-<!-- Create a hamburger menu to be mobile responsive -->
+<!-- Possible @TODO create dynamic name variables with javascript-->
+<!-- Create a hamburger menu with javascript to be mobile responsive -->
 <!DOCTYPE html>
 <html>
   <head>
@@ -20,154 +20,152 @@
     ></script>
   </head>
   <body>
-    <div class="page-wrapper">
-      <!-- Header -->
-      <header class="header bg-white">
-        <div class="rectangle">
-          <nav class="nav-menu">
-            <div class="logo">
-              <a href="index.html"><img src="./images/logo.svg" alt="" /></a>
-            </div>
-            <ul class="text-forestGreen font-light">
-              <li><a href="#">The development</a></li>
-              <li><a href="#">About Stinders</a></li>
-              <li><a href="#">Local area</a></li>
-              <li><a href="#">News</a></li>
-              <li>
-                <a
-                  href="#"
-                  class="button header-button bg-deepGold text-white font-medium"
-                >
-                  Register Your Interest
-                  <i class="fa-solid fa-circle-arrow-right"></i>
-                </a>
-              </li>
-            </ul>
-          </nav>
+    <!-- Header -->
+    <header class="header bg-white">
+      <nav class="nav-menu page-width-default">
+        <div>
+          <a href="index.html"><img src="./images/logo.svg" alt="" /></a>
         </div>
-      </header>
-
-      <!-- Banner -->
-      <section class="banner bg-forestGreen">
-        <div class="container">
-          <div class="banner-col-1">
-            <h1 class="font-light text-white">
-              <strong>An exclusive development </strong><br />
-              of luxury bungalows & homes
-            </h1>
-            <span class="banner-location font-light text-white"
-              ><i class="fa-solid fa-location-dot text-deepGold mr-10"></i
-              >Location name goes here</span
+        <ul class="text-forestGreen font-light">
+          <li><a href="#">The development</a></li>
+          <li><a href="#">About Stinders</a></li>
+          <li><a href="#">Local area</a></li>
+          <li><a href="#">News</a></li>
+          <li>
+            <a
+              href="#"
+              class="button header-button bg-deepGold text-white font-medium"
             >
-          </div>
-          <div class="banner-col-2">
-            <h3 class="text-white">
-              <i class="fa-solid fa-house icon mr-10 text-gold"></i>Prices from
-              £300,000
-            </h3>
-            <h3 class="text-white">
-              <i class="fa-solid fa-bed icon mr-10 text-gold"></i>3-5 Bedrooms
-              Homes
-            </h3>
-            <div class="banner-button-container">
-              <a href="#" class="banner-button button font-medium text-white"
-                >View The Development<i
-                  class="fa-solid fa-circle-arrow-right"
-                ></i
-              ></a>
-            </div>
-          </div>
-        </div>
-        <div class="view-properties-container">
-          <div class="view-properties">
-            <div class="view-properties-rotate">
-              <i
-                class="fa-solid fa-arrow-left text-orange border-orange mr-10 rounded-arrow"
-              ></i>
-              <a href="#properties" class="text-white font-light"
-                >VIEW PROPERTIES</a
-              >
-            </div>
-          </div>
-        </div>
-      </section>
+              Register Your Interest
+              <i class="fa-solid fa-circle-arrow-right"></i>
+            </a>
+          </li>
+        </ul>
+      </nav>
+    </header>
 
-      <!-- Banner Image -->
-      <div class="banner-image-container">
-        <div class="banner-image"></div>
-        <div class="banner-image-text bg-gold">
-          <h5 class="font-medium">Sold exclusively by Name here</h5>
-          <div class="dot bg-black"></div>
-          <a class="button"
-            >Register Your Interest
-            <i
-              class="fa-solid fa-arrow-right text-black border-black mr-10 rounded-arrow"
-            ></i
-          ></a>
+    <!-- Banner -->
+    <section class="banner bg-forestGreen">
+      <div class="container page-width-default">
+        <div class="banner-col-1">
+          <h1 class="font-light text-white">
+            <strong>An exclusive development </strong><br />
+            of luxury bungalows & homes
+          </h1>
+          <span class="banner-location font-light text-white"
+            ><i class="fa-solid fa-location-dot text-deepGold mr-10"></i
+            >Location name goes here</span
+          >
+        </div>
+        <div class="divider-vertical border-white"></div>
+        <div class="banner-col-2">
+          <h3 class="text-white font-light">
+            <i class="fa-solid fa-house icon mr-10 text-gold"></i>Prices from
+            £300,000
+          </h3>
+          <h3 class="text-white">
+            <i class="fa-solid fa-bed icon mr-10 text-gold"></i>3-5 Bedrooms
+            Homes
+          </h3>
+          <div class="banner-button-container">
+            <a href="#" class="banner-button button font-medium text-white"
+              >View The Development<i class="fa-solid fa-circle-arrow-right"></i
+            ></a>
+          </div>
         </div>
       </div>
-
-      <!-- Properties -->
-      <div id="properties"></div>
-      <section class="properties">
-        <div class="properties-col-1">
-          <h2>Featured Properties</h2>
-          <p class="font-light">
-            Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
-            eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim
-            ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut.
-          </p>
-          <!-- second property -->
-          <div class="property-image-container">
-            <div class="property-image">
-              <img class="overlay-image" src="./images/couch.png" alt="" />
-            </div>
-            <div class="property-details bg-white">
-              <div class="property-name-price">
-                <h3 class="text-orange font-medium">Property Name</h3>
-                <h5 class="text-deepGold font-medium">£450,000</h5>
-              </div>
-              <div class="property-plot-type">
-                <span>Plot 9</span> <span class="divider-vertical"></span>
-                <span>4 Bedroom Detached</span>
-              </div>
-              <a href="#" class="font-medium"
-                >View Property
-                <i
-                  class="fa-solid fa-arrow-right text-orange border-orange rounded-arrow"
-                ></i
-              ></a>
-            </div>
+      <div class="view-properties-container">
+        <div class="view-properties">
+          <div class="view-properties-rotate">
+            <a href="#properties" class="text-white font-light">
+              <i
+                class="fa-solid fa-arrow-left text-orange border-orange rounded-arrow"
+              ></i
+              >VIEW PROPERTIES</a
+            >
           </div>
         </div>
-        <div class="properties-col-2">
-          <!-- @TODO Reusable component with dynamic name/price/type/link variables -->
-          <div class="property-image-container">
-            <div class="property-image">
-              <img class="overlay-image" src="./images/bed.png" alt="" />
-            </div>
-            <div class="property-details bg-white">
-              <div class="property-name-price">
-                <h3 class="text-orange font-medium">Property Name</h3>
-                <h5 class="text-deepGold font-medium">£450,000</h5>
-              </div>
-              <div class="property-plot-type">
-                <span>Plot 9</span> <span class="divider-vertical"></span>
-                <span>4 Bedroom Detached</span>
-              </div>
-              <a href="#" class="font-medium"
-                >View Property
-                <i
-                  class="fa-solid fa-arrow-right text-orange border-orange rounded-arrow"
-                ></i
-              ></a>
-            </div>
-          </div>
-        </div>
-      </section>
+      </div>
+    </section>
 
-      <footer></footer>
+    <!-- Banner Image -->
+    <div class="banner-image-container page-width-default">
+      <div class="banner-image"></div>
+      <div class="banner-image-text bg-gold">
+        <h5 class="font-medium">Sold exclusively by Name here</h5>
+        <div class="dot bg-black"></div>
+        <a class="button"
+          >Register Your Interest
+          <i
+            class="fa-solid fa-arrow-right text-black border-black mr-10 rounded-arrow"
+          ></i
+        ></a>
+      </div>
     </div>
+
+    <!-- Properties -->
+    <!-- div for properties anchor -->
+    <div id="properties"></div>
+    <section class="properties page-width-default">
+      <div class="properties-col-1">
+        <h2>Featured Properties</h2>
+        <p class="font-light">
+          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do
+          eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad
+          minim veniam, quis nostrud exercitation ullamco laboris nisi ut.
+        </p>
+        <!-- second property -->
+        <div class="property-image-container">
+          <div class="property-image">
+            <img class="overlay-image" src="./images/couch.png" alt="" />
+          </div>
+          <div class="property-details bg-white">
+            <div class="property-name-price">
+              <h3 class="text-orange font-medium">Property Name</h3>
+              <h5 class="text-deepGold font-medium">£450,000</h5>
+            </div>
+            <div class="property-plot-type">
+              <span>Plot 9</span>
+              <span class="divider-vertical border-gold"></span>
+              <span>4 Bedroom Detached</span>
+            </div>
+            <a href="#" class="font-medium"
+              >View Property
+              <i
+                class="fa-solid fa-arrow-right text-orange border-orange rounded-arrow"
+              ></i
+            ></a>
+          </div>
+        </div>
+      </div>
+      <div class="properties-col-2">
+        <!-- @TODO Reusable component with dynamic name/price/type/link variables -->
+        <div class="property-image-container">
+          <div class="property-image">
+            <img class="overlay-image" src="./images/bed.png" alt="" />
+          </div>
+          <div class="property-details bg-white">
+            <div class="property-name-price">
+              <h3 class="text-orange font-medium">Property Name</h3>
+              <h5 class="text-deepGold font-medium">£450,000</h5>
+            </div>
+            <div class="property-plot-type">
+              <span>Plot 9</span>
+              <span class="divider-vertical border-gold"></span>
+              <span>4 Bedroom Detached</span>
+            </div>
+            <a href="#" class="font-medium"
+              >View Property
+              <i
+                class="fa-solid fa-arrow-right text-orange border-orange rounded-arrow"
+              ></i
+            ></a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <footer></footer>
     <!-- Scripts -->
   </body>
 </html>
